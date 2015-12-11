@@ -1,0 +1,14 @@
+//val twoThree = List(2,3);
+//val oneTwoThree = 1 :: twoThree;
+//println(oneTwoThree);
+//val oneTwoThreeFour = 1 :: 2 :: 3 :: 4 :: Nil;
+//println(oneTwoThreeFour);
+//val thrill = "Will" :: "fill" :: "until" :: Nil;
+//println(thrill.count(s => s.length ==5));
+//println(thrill.drop(2));
+//println(thrill.dropRight(2));
+//println(thrill.filter( s => s.length ==4));
+//println(thrill.foreach(s => print(s)));
+//println(thrill.foreach(print));
+//println(thrill.head);
+//println(thrill.init);
