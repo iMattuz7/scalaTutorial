@@ -14,7 +14,7 @@ object init09 {
     println();
     
     val c = new Carried();
-    val Position1 = _c.CurriedSum("lala");
+    val Position1 = c.CurriedSum("lala")_;
     val Position2 = c.CurriedSum("lili")("lulu");
     println(Position1("lolo"));
     println(Position2);
