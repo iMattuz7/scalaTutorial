@@ -48,7 +48,52 @@ class ManageList {
     val soloLosPrimerosX = list1.take(2); //X == 2
     val res = list1.splitAt(3);
     val listaCortada1 = res._1;
+    //list1.apply(3) Devuelve el 4to elemento 
+    
     
   }
+  
+  def Zipped(): List[(Int,Int)] = {
+    list1.zipWithIndex;
+  }
+  
+  def operationsPartII() = {
+    val ls1 = List(1,2,3);
+    val ls1mas1 = ls1.map { _ + 1 ;}//devuelve List(2,3,4)
+    
+    val lst = List("hola","chau","lol");
+    val lstFilter = lst.filter { _.length() == 4 ;} //return hola,chau
+    val lstPartition = lst.partition { _.length() == 4 ;}
+    //lstPartition._2; devuelve el resultado de la lista que no coincide con lo que se busco
+    //lstPartition._1; devuelve el resultado que si coincide
+    val lstFind = lst.find { _.length() == 4 ;}//devuelve el primer elemento que cumple la regla
+    
+   //TAKEWHILE
+    val lstBIG = List(1,2,3,4,5,6,7,8);
+    val lstTakeWhile = lstBIG.takeWhile { _ < 5 }
+    //devuelve los resultados que complen el if hasta que un valor no lo haga
+    val lstDropWhile = lstBIG.dropWhile { _ < 5 } 
+    val lstSpan = lstBIG.span { _ < 5; }
+    //lstDropWhile;
+    //lstSpan._1;// == takeWhile // _2 == dropWhile
+    
+    //FOLD
+    val lststr = List("hola","como","te","va");
+    val listfold1 = ("" /: lststr)(_ + " " + _);
+    val lstInt = List(2,2,2,2);
+    val lstSUM = (0 /: lstInt)(_ + _)
+    val lstSUM2 = (lststr :\ "222")(_ +" "+ _);
+    lstSUM;
+    //FOLD mas concatenate  
+    
+    
+    
+    
+  }
+  
+  def flatterm[T](xss: List[List[T]]) = (List[T]() /: xss)(_ ::: _)
+  
+  
+  
 
 }
