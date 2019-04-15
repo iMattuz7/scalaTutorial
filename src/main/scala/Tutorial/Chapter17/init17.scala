@@ -6,7 +6,7 @@ object init17 {
     
     
     //val t = new test("asd"); constructor private
-  val x = new Factory(List(1,2,3));
+  //val x = new Factory(List(1,2,3));
   
   }
 }

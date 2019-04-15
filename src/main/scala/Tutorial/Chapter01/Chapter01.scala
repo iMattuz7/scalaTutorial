@@ -9,7 +9,7 @@ class Chapter01 {
   }
   
   def MM01Factorial(x: BigInt) : BigInt = {
-    if (x==0) 1 else x * MM01Factorial(x-1);
+    if (x==0) return 1 else  return (x * MM01Factorial(x-1));
   }
   
   def MM01UpperCase(x : String) : Boolean = {

@@ -9,7 +9,7 @@ object Exec {
     
     
     //ejercicio 2 factorial
-    val factorial01 = ch01.MM01Factorial(3);
+    val factorial01 = ch01.MM01Factorial(10);
     println(factorial01);
     
     //ejercicio 3 String Upper
@@ -17,7 +17,7 @@ object Exec {
     val isUpperC1 = ch01.MM01UpperCase("matias");
     println("matias " + isUpperC1.toString());
     //Probando Matias
-    val isUpperC2 = ch01.MM01UpperCase("Luciana");
-    println("Luciana " + isUpperC2.toString());
+    val isUpperC2 = ch01.MM01UpperCase("DAIANA");
+    println("DAIANA " + isUpperC2.toString());
   }
 }
